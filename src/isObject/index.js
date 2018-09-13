@@ -9,7 +9,8 @@
  */
 const isObject = data => {
   /* your logic here...*/
-  return typeof data === 'object' && data !== null;
+
+  return typeof     Object.prototype.toString.call(data) === '[object Array]'&& data !== null ;
 };
 
 
